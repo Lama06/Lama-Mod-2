@@ -10,7 +10,7 @@ import net.minecraft.client.network.ServerInfo;
 
 public class LamaMod implements ClientModInitializer {
     public static final String prefix = "[LamaMod] ";
-    public static final ModVersion version = new ModVersion(2, 0, 0);
+    public static final ModVersion version = new ModVersion(2, 0, 1);
     public static final WidgetList widgets = new WidgetList();
     public static final ShortcutList shortcuts = new ShortcutList();
     public static final OptionsFile options = new OptionsFile();
