@@ -17,7 +17,7 @@ public abstract class AbstractOption<T> implements MessageSentCallback {
     private final String serializedName;
     private final String chatName;
     private T defaultValue;
-    private T value;
+    private T value = null;
 
     /**
      * @param name           der Name der Option, der dem Spieler angezeigt wird

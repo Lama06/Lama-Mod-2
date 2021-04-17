@@ -91,7 +91,7 @@ public final class Util {
         }
 
         JsonPrimitive primitive = json.getAsJsonPrimitive();
-        return primitive.isBoolean();
+        return primitive.isNumber();
     }
 
     public static boolean isString(JsonElement json) {

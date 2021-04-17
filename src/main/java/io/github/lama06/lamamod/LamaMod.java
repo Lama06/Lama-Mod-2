@@ -1,15 +1,11 @@
 package io.github.lama06.lamamod;
 
-import com.mojang.authlib.GameProfile;
-import com.mojang.authlib.minecraft.MinecraftProfileTexture;
 import io.github.lama06.lamamod.options.OptionsFile;
 import io.github.lama06.lamamod.shortcut.ShortcutList;
 import io.github.lama06.lamamod.version.GithubRelease;
 import io.github.lama06.lamamod.version.ModVersion;
 import io.github.lama06.lamamod.widget.WidgetList;
 import net.fabricmc.api.ClientModInitializer;
-import net.minecraft.client.MinecraftClient;
-import net.minecraft.client.network.PlayerListEntry;
 import net.minecraft.client.network.ServerInfo;
 
 public class LamaMod implements ClientModInitializer {
