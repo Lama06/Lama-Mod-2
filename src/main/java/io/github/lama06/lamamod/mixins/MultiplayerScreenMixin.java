@@ -17,6 +17,6 @@ public abstract class MultiplayerScreenMixin extends Screen {
 
     @Inject(at = @At("HEAD"), method = "init")
     public void addLamaServerButton(CallbackInfo ci) {
-        addButton(new LamaServerButtonFactory(this).create());
+        addDrawableChild(new LamaServerButtonFactory(this).create());
     }
 }

@@ -6,15 +6,17 @@ import io.github.lama06.lamamod.version.GithubRelease;
 import io.github.lama06.lamamod.version.ModVersion;
 import io.github.lama06.lamamod.widget.WidgetList;
 import net.fabricmc.api.ClientModInitializer;
+import net.minecraft.client.network.ServerAddress;
 import net.minecraft.client.network.ServerInfo;
 
 public class LamaMod implements ClientModInitializer {
     public static final String prefix = "[LamaMod] ";
-    public static final ModVersion version = new ModVersion(2, 0, 1);
+    public static final ModVersion version = new ModVersion(2, 1, 0);
     public static final WidgetList widgets = new WidgetList();
     public static final ShortcutList shortcuts = new ShortcutList();
     public static final OptionsFile options = new OptionsFile();
-    public static final ServerInfo lamaServerAddress = new ServerInfo("Lama Server", "lamaserver.ddns.net", false);
+    public static final ServerInfo lamaServerInfo = new ServerInfo("Lama Server", "lamaserver.ddns.net", false);
+    public static final ServerAddress lamaServerAdress = new ServerAddress("lamaserver.ddns.net", 25565);
 
     @Override
     public void onInitializeClient() {

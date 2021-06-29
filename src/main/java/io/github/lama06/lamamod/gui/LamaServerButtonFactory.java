@@ -24,7 +24,7 @@ public final class LamaServerButtonFactory {
     }
 
     private void connectToServer() {
-        Util.connectToServer(parent, LamaMod.lamaServerAddress);
+        Util.connectToServer(parent, LamaMod.lamaServerInfo, LamaMod.lamaServerAdress);
     }
 
     private void onClick(ButtonWidget widget) {

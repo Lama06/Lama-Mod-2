@@ -23,10 +23,10 @@ public final class NewerVersionAvailableScreen extends Screen {
 
     protected void init() {
         super.init();
-        addButton(new ButtonWidget(width / 2 - 155, height / 6 + 96, 150, 20, new TranslatableText("Abbrechen"), (button) -> {
+        addDrawableChild(new ButtonWidget(width / 2 - 155, height / 6 + 96, 150, 20, new TranslatableText("Abbrechen"), (button) -> {
             onCancel.run();
         }));
-        addButton(new ButtonWidget(width / 2 - 155 + 160, height / 6 + 96, 150, 20, new LiteralText("Herunterladen"), (button) -> {
+        addDrawableChild(new ButtonWidget(width / 2 - 155 + 160, height / 6 + 96, 150, 20, new LiteralText("Herunterladen"), (button) -> {
             Util.openURL(newestRelease.htmlUrl);
         }));
     }

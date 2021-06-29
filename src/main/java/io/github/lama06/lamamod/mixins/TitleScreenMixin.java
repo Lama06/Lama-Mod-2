@@ -17,6 +17,6 @@ public abstract class TitleScreenMixin extends Screen {
 
     @Inject(at = @At("HEAD"), method = "initWidgetsNormal")
     public void addLamaServerButton(int y, int spacingY, CallbackInfo ci) {
-        addButton(new LamaServerButtonFactory(this).create());
+        addDrawableChild(new LamaServerButtonFactory(this).create());
     }
 }

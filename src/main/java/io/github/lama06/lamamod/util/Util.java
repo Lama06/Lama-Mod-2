@@ -7,6 +7,7 @@ import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.gui.screen.ConnectScreen;
 import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.client.network.ClientPlayerEntity;
+import net.minecraft.client.network.ServerAddress;
 import net.minecraft.client.network.ServerInfo;
 import net.minecraft.text.LiteralText;
 import net.minecraft.util.crash.CrashReport;
@@ -140,7 +141,7 @@ public final class Util {
         }
     }
 
-    public static void connectToServer(Screen parent, ServerInfo server) {
-        client.openScreen(new ConnectScreen(parent, client, server));
+    public static void connectToServer(Screen parent, ServerInfo server, ServerAddress address) {
+        ConnectScreen.connect(parent, client, address, server);
     }
 }
